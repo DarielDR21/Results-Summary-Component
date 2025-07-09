@@ -25,7 +25,7 @@ body {
     width: 50%;
     max-width: 800px;
     min-width: 350px;
-    height: 45vh;
+    height: 55vh;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -47,10 +47,11 @@ body {
 #result {
     font-size: 1.3rem;
     opacity: 0.7;
+    font-weight: 500;
 }
 
 .circle {
-    background: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsl(241, 81%, 54%));
     width: 70%;
     max-width: 180px;
     border-radius: 50%;
@@ -105,21 +106,65 @@ body {
     color: black;
     font-weight: 800;
     padding-left: 35px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
-.reaction {
+.reaction, .memory, .verbal, .visual {
     display: flex;
-    color: black;
-    background: hsl(0, 19%, 84%, 0.5);
+    background: hsla(0, 19%, 84%, 0.5);
     justify-content: space-between;
-    padding: 0.75rem 1rem;
-    width: 90%;
-    margin: 10px auto;
+    padding: 0.80rem 1rem;
+    width: 80%;
+    margin: 15px auto;
     border-radius: 10px;
+    font-weight: 600;
+    opacity: 0.8;
 }
+
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual { 
+    color: hsl(234, 85%, 45%);
+}
+
 
 .icon {
     display: flex;
     align-items: center;
+}
+
+.icon img {
+    margin-right: 10px;
+}
+
+.summary-scores {
+    color: hsla(224, 30%, 27%, 0.5)
+}
+
+.highlighted {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+#continue {
+    color: hsla(0, 0%, 100%, 0.8);
+    background-color: hsl(224, 30%, 27%);
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 45px;
+    padding: 0.85rem 1rem;
+    margin-top: 40px;
+    font-size: 1rem;
 }
