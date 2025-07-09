@@ -4,32 +4,122 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.9);
     background: hsl(221, 100%, 96%);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
     width: 50%;
-    height: 50%;
+    max-width: 800px;
+    min-width: 350px;
+    height: 45vh;
     border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+
+/* ----------------------Blue Side---------------------- */
 
 .blue {
+    flex: 1; /* Flex 1 distrinuted */
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    width: 50%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1.5rem;
     border-radius: 25px;
 }
 
+#result {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+.circle {
+    background: hsla(256, 72%, 46%, 1);
+    width: 70%;
+    max-width: 180px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#score {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#of100 {
+    opacity: 0.3;
+}
+
+.below-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#great {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 40px;
+    opacity: 1;
+    font-weight: 700;
+}
+
+#score-higher {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    margin-top: -20px;
+    opacity: 0.7;
+}
+
+/* ----------------White Side------------------------------ */
+
 .white {
-    background-color: hsl(0, 0%, 100%);
-    width: 50%;
-    height: 100%;
+    flex: 1;
+    border-radius: 25px 25px 0 0;
+}
+
+#summary {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 800;
+    padding-left: 35px;
+    padding-top: 40px;
+}
+
+.reaction {
+    display: flex;
+    color: black;
+    background: hsl(0, 19%, 84%, 0.5);
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
 }
